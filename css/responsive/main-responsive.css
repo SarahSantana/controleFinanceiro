@@ -236,10 +236,6 @@
     height: 70px;
     line-height: 70px;
   }
-  header#topo #menu .content{
-    right: -350px;
-    width: 350px;
-  }
   header#topo #menu .content #close-menu-mobile {
     font-size: 28px;
   }
