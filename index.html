@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Controle Financeiro">
+	<title>Controle financeiro</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive/main-responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive/index-responsive.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskMoney.js"></script>
+	<script type="text/javascript" src="js/view/controle-financeiro.js"></script>
+</head>
+
+<body>
+
+	<!-- HEADER TOPO -->
+	<header id="topo">
+
+		<!-- DIV CONTAINER -->
+		<div class="container">
+
+			<!-- DIV LOGO -->
+			<div id="logo">
+
+				<div class="img">
+					<img src="img/logo.jpg" alt="Logo">
+				</div>
+				<div class="titulo">
+					<h1>Controle financeiro</h1>
+				</div>
+
+			<!-- DIV LOGO -->
+			</div>
+
+			<!-- DIV MENU -->
+			<div id="menu">
+
+				<div class="bt-menu-mobile">
+					<i id="open-menu-mobile" class="fas fa-bars"></i>
+				</div>
+
+				<!-- DIV CONTENT -->
+				<div class="content">
+					<div class="close">
+						<i id="close-menu-mobile" class="fas fa-times"></i>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="javascript:;">Dashboard</a></li>
+							<li><a href="javascript:;">Resumo</a></li>
+							<li><a href="javascript:;">Configurações</a></li>
+						</ul>
+					</nav>
+				<!-- DIV CONTENT -->
+				</div>
+
+			<!-- DIV MENU -->
+			</div>
+
+		<!-- DIV CONTAINER -->
+		</div>
+
+	<!-- HEADER TOPO -->
+	</header>
+
+
+	<!-- DIV PAGE -->
+	<div id="page">
+
+		<!-- DIV CONTAINER -->
+		<div class="container">
+
+			<!-- SECTION TRANSACAO -->
+			<section id="transacao">
+
+				<form id="new-transacao" method="post" action="">
+					<h3>Nova transação</h3>
+					<fieldset>
+						<legend>Preencha o formulário para cadastrar uma nova transação</legend>
+						<!-- DIV FORM-GROUP -->
+						<div class="form-group">
+							<label class="form-label" for="tipo_transacao">Tipo de transação</label>
+							<span class="form-group-select">
+								<select class="form-select" id="tipo_transacao" name="tipo_transacao" required="required">
+									<option value="Compra">Compra</option>
+									<option value="Venda">Venda</option>
+								</select>
+								<i class="fas fa-chevron-down"></i>
+							</span>
+						<!-- DIV FORM-GROUP -->
+						</div>
+						<!-- DIV FORM-GROUP -->
+						<div class="form-group">
+							<label class="form-label" for="nome_mercadoria">Nome da mercadoria</label>
+							<input class="form-input" id="nome_mercadoria" name="nome_mercadoria" type="text" required="required" placeholder="Input">
+						<!-- DIV FORM-GROUP -->
+						</div>
+						<!-- DIV FORM-GROUP -->
+						<div class="form-group">
+							<label class="form-label" for="valor">Valor</label>
+							<input class="form-input money" id="valor" name="valor" type="text" required="required" placeholder="R$ 0,00" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+						<!-- DIV FORM-GROUP -->
+						</div>
+					</fieldset>
+					<div class="form-button">
+						<a id="addTransacao" class="bt-grey">Adicionar transação</a>
+					</div>
+				</form>
+
+			<!-- SECTION TRANSACAO -->
+			</section>
+
+			<!-- SECTION EXTRATO -->
+			<section id="extrato">
+
+				<h3>Extrato de transações</h3>
+
+				<table id="tb-extrato">
+					<thead>
+						<tr>
+							<th>Mercadoria</th>
+							<th>Valor</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td><strong>Total</strong></td>
+							<td id="total">
+								<strong id="price-total"></strong>
+								<span class="upper">[<span class="tipo_retorno"></span>]</span>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+
+			<!-- SECTION EXTRATO -->
+			</section>
+
+		<!-- DIV CONTAINER -->
+		</div>
+
+	<!-- DIV PAGE -->
+	</div>
+	
+
+</body>
+
+</html>

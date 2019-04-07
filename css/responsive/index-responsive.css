@@ -1,0 +1,97 @@
+/**********************
+* RESPONSIVIDADE
+* DESKTOP: 1900 - 1024
+***********************/
+
+@media(max-width: 1100px) {
+  section#transacao {
+    width: 35%;
+  }
+  section#extrato {
+    width: 64%;
+    margin-left: 1%;
+  }
+}
+
+/**********************
+* RESPONSIVIDADE
+* TABLET: 900 - 750
+***********************/
+
+@media(max-width: 900px) {
+  section#transacao,
+  section#extrato {
+    width: 100%;
+  }
+  section#extrato {
+    margin-left: 0%;
+    margin-top:30px;
+  }
+  section#transacao form#new-transacao {
+    padding: 20px 17px;
+  }
+  section#transacao form fieldset {
+    margin: 20px 0 0 0;
+  }
+  section#transacao form#new-transacao fieldset .form-group:nth-child(3){
+    width:50%;
+    margin:0 2%;
+  }
+  table#tb-extrato,
+  table#tb-extrato,
+  section#extrato p.tb-msg{
+    font-size:13px;    
+  }
+  table#tb-extrato tr th:first-child, 
+  table#tb-extrato tr td:first-child{
+    width: 50% !important;
+  }
+  table#tb-extrato tbody td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  table#tb-extrato tfoot #total .upper {
+    font-size: 11px;
+  }
+}
+
+/**********************
+* RESPONSIVIDADE
+* MOBILE: 750
+***********************/
+@media(max-width: 750px) {
+  section#transacao form#new-transacao{
+    border:0;
+    border-bottom:1px solid #BEBEBE;
+    border-radius:0;
+    padding:0 0 25px 0;
+  }
+  section#transacao form#new-transacao h3{
+    display:none;
+  }
+  section#transacao form fieldset,
+  section#transacao form#new-transacao fieldset .form-group:nth-child(3){
+    margin:0;
+  }
+  section#extrato h3{
+    font-size:17px;
+  }
+  table#tb-extrato {
+    font-size: 14px;
+  }
+  table#tb-extrato tbody td{
+    line-height:16px;
+  }
+  table#tb-extrato thead tr th:last-child{
+    text-align:center;
+    padding-left: 27px;
+  }
+  table#tb-extrato tr th:first-child, 
+  table#tb-extrato tr td:first-child {
+    width: 39% !important;
+  }
+  table#tb-extrato tr th:last-child, 
+  table#tb-extrato tr td:last-child {
+    width: 20% !important;
+  }
+}

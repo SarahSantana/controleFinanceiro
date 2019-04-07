@@ -1,0 +1,91 @@
+/**************
+* TRANSACOES INDEX
+***************/
+
+/* section transacao */
+section#transacao{
+	float:left;
+	width:30%;
+}
+section#transacao form#new-transacao{
+	display:inline-block;
+	width: 99%;
+	border:1px solid #BEBEBE;
+	border-radius:3px;
+	box-sizing:border-box;
+	padding: 15px 10px;
+}
+section#transacao form fieldset{
+	margin:15px 0 0 0;
+}
+
+/* section extrato */
+section#extrato{
+	float:left;
+	width:69%;
+	margin-left:1%;
+}
+section#extrato h3{
+	margin:15px 0 11px 0;
+}
+
+/* tabela extrato */
+table#tb-extrato tr td{
+	width:50%;
+	box-sizing:border-box;
+}
+table#tb-extrato tr th:first-child,
+table#tb-extrato tr td:first-child{
+	text-align:left;
+}
+table#tb-extrato tr th:last-child,
+table#tb-extrato tr td:last-child{
+	text-align:right;
+}
+table#tb-extrato thead tr th:first-child,
+table#tb-extrato tfoot tr td:first-child{
+	box-sizing:border-box;
+	padding-left: 35px;
+}
+table#tb-extrato thead tr th:last-child,
+table#tb-extrato tbody tr td:last-child,
+table#tb-extrato tfoot tr td:last-child{
+	box-sizing:border-box;
+	padding-right: 22px;
+	padding-left: 20px;
+}
+table#tb-extrato tbody tr td:first-child{
+	box-sizing:border-box;
+	padding-left: 18px;
+}
+table#tb-extrato thead th{
+	padding-top:4px;
+	padding-bottom:4px;
+}
+table#tb-extrato tbody td{
+	padding-top: 6px;
+	padding-bottom:6px;
+}
+table#tb-extrato tfoot td{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+table#tb-extrato tfoot #price-total{
+	width:100%;
+	display: inline-block;
+}
+table#tb-extrato tfoot #total .upper{
+	font-size:10px;
+}
+table .tb-desc{
+	line-height:14px;
+}
+table .tb-desc .icone{
+	display:inline-block;
+	float:left;
+	margin-right:8px;
+}
+table .tb-desc span{
+	display:inline-block;
+	width: calc(100% - 20px);
+}
